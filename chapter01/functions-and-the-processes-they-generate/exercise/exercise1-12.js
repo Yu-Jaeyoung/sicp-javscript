@@ -19,3 +19,9 @@ function pascal(row, col) {
     // recursion case: sum of the two numbers in the above row
     return pascal(row - 1, col - 1) + pascal(row - 1, col);
 }
+
+function pascal_improve(row, col) {
+    return col === 0 || col === row
+        ? 1
+        : pascal_improve(row - 1, col - 1) + pascal_improve(row - 1, col);
+}
