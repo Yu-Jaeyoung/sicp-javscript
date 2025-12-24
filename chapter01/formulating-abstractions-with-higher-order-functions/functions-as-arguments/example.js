@@ -11,7 +11,7 @@ function cube(x) {
 // function sum_cubes(a, b) {
 //     return a > b
 //         ? 0
-//         : cube(a) + sum_cubes();
+//         : cube(a) + sum_cubes(a + 1, b);
 // }
 
 // function pi_sum(a, b) {

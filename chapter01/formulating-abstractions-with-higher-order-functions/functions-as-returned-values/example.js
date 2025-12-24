@@ -1,3 +1,13 @@
+const tolerance = 0.00001;
+
+function abs(x) {
+    return x > 0
+        ? x
+        : x === 0
+            ? 0
+            : -x;
+}
+
 function average(x, y) {
     return (x + y) / 2;
 }
